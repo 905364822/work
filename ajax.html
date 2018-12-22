@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	</head>
+&.ajax({
+type:"post",
+url:"./jsonp.php?username=username",
+dataType:"html",
+data:{username:"qqq",password:"123"}.
+success: function(json){
+console.log(json);
+}，
+error:function(){
+console.log("fail");
+}
+})
+<div class="mui-content">
+            <div class="mui-content-padded">
+                <h5>左侧loading图标：</h5>
+                <button type="button" class="mui-btn mui-btn-primary" >确认</button>
+                <h5>右侧loading图标：</h5>
+                <button type="button" class="mui-btn mui-btn-primary" data-loading-text = "提交中" data-loading-icon-position="right">确认</button>
+                <h5>无loading图标：</h5>
+                <button type="button" class="mui-btn mui-btn-primary" data-loading-icon="">确认</button>
+                <h5>自定义loading图标：</h5>
+                <button type="button" class="mui-btn mui-btn-primary" data-loading-icon="mui-spinner mui-spinner-custom">确认</button>
+                <h5>其他button效果</h5>
+                <button type="button" class="mui-btn">确认</button>
+                <button type="button" class="mui-btn mui-btn-outlined mui-btn-primary">确认</button>
+                <button type="button" class="mui-btn mui-btn-primary">确认 <span class="mui-badge mui-badge-primary">2</span></button>
+                <button type="button" class="mui-btn mui-btn-block mui-btn-primary">确认</button>
+            </div>
+        </div>
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

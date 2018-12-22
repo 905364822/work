@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
+			.mui-content{
+				margin: 10px 10px ;
+			//	font-size: 360x;
+				}
+			p {font-size:30px;}
+			.mui-title{
+					font-size: 30px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">记账APP</h1>
+		</header>
+		<div class="mui-content">
+	    <p>哟，难受</p>
+		</div>
+		<div class="mui-content">
+			<div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">card
+					</li>
+					<li class="mui-table-view-divider"></li>
+					<li class="mui-table-view-cell">Item 1 <span class="mui-badge mui-badge-primary">14</span></li>
+					<li class="mui-table-view-cell">Item 2 <span class="mui-badge mui-badge-success">1</span></li>
+					<li class="mui-table-view-cell">Item 3 <span class="mui-badge">5</span></li>
+					<li class="mui-table-view-divider"></li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							<span class="mui-badge mui-badge-danger">15</span>
+							Item 1
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							<span class="mui-badge mui-badge-purple">5</span>
+							Item 2
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							<span class="mui-badge mui-badge-warning">5</span>
+							Item 3
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+</html>
