@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
+			.mui-content{
+				margin: 150px 10px ;
+				font-size: 30px;
+				}
+			.mui-title{
+					
+					font-size: 30px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">记账APP</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				 <li class="mui-table-view-cell">请输入您的月收入 :</li>
+			</ul>
+			<form class="mui-input-group">
+			    <div class="mui-input-row">
+			    <input type="text" class="mui-input-clear">
+			    </div>
+			    <div class="mui-button-row">
+			        <button type="button" class="mui-btn mui-btn-primary" >确认</button>
+			        <button type="button" class="mui-btn mui-btn-danger" >取消</button>
+			    </div>
+			</form>
+		</div>
+		
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+</html>
